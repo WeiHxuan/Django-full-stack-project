@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增商品上市</title>
+</head>
+<body>
+    <form action="/shop/save/" method="post">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>海报路径</td>
+                <td>
+                     <input type="text" name="phone_img">
+                </td>
+            </tr>
+            <tr>
+                <td>手机型号</td>
+                <td>
+                     <input type="text" name="title">
+                </td>
+            </tr>
+           <tr>
+                <td>配置</td>
+                <td>
+                    <textarea rows="3" cols="25" name="disposition">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>售价</td>
+                <td>
+                     <input type="text" name="sell_price">
+                </td>
+            </tr>
+            <tr>
+                <td>市场价</td>
+                <td>
+                    <input type="text" name="market_price">
+                </td>
+            </tr>
+            <tr>
+                <td>库存</td>
+                <td>
+                    <input type="number" name="stock_quantity"/>
+                </td>
+            </tr>
+            <tr>
+                <td>编号</td>
+                <td>
+                    <input type="number" name="id"/>
+                </td>
+            </tr>
+            <tr>
+                <td>点击量</td>
+                <td>
+                    <input type="number" name="click" value="0"/>
+                </td>
+            </tr>
+            <tr>
+                <td>发售时间</td>
+                <td>
+                    <input type="date" name="release_time">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="发售"/></td>
+                <td><input type="reset" value="重置"/> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

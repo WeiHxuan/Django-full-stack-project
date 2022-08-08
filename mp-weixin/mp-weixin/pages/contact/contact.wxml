@@ -1,0 +1,1 @@
+<view class="contact"><image src="http://www.itcast.cn/2018czydz/images/gywmban.jpg" mode></image><view class="info"><view data-event-opts="{{[['tap',[['phone',['$event']]]]]}}" bindtap="__e">联系电话:13066615592</view><view>校区地址:辽宁省沈阳市康平县</view></view><map class="map" longitude="120.363172" latitude="30.312212" scale="{{scale}}" markers="{{covers}}"></map></view>

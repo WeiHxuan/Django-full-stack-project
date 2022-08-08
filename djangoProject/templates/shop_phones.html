@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手机列表</title>
+    <style>
+        img{
+            width:150px;
+        }
+        li{
+            list-style: none;
+            border: 2px solid lightgrey;
+            border-radius: 20px;
+            width:40%;
+            margin:20px;
+            padding-left: 2em;
+            float:left;
+            min-height: 500px;
+        }
+        .grade{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    {% for shop_phones in shop_phones %}
+        <li>
+            <p><img src="{{ shop_phones.phone_img }}" alt=""></p>
+            <h2>{{ shop_phones.title }}</h2>
+            <p>配置：{{ shop_phones.disposition }}</p>
+            <p class="grade">售价：{{ shop_phones.sell_price }}</p>
+            <p class="grade">市场价：{{ shop_phones.market_price }}</p>
+            <p>库存：{{ shop_phones.stock_quantity }}</p>
+            <p>发售时间:{{ shop_phones.release_time|date:'Y-m-d' }}</p>
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

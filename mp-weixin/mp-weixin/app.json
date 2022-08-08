@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/member/member",
+    "pages/news/news",
+    "pages/goods/goods",
+    "pages/contact/contact",
+    "pages/pics/pics",
+    "components/goods-list/goods-list"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "连 大 商 城",
+    "navigationBarBackgroundColor": "#3ad4a0",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#3ad4a0",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/home.png",
+        "selectedIconPath": "static/home-active.png"
+      },
+      {
+        "text": "咨询",
+        "pagePath": "pages/news/news",
+        "iconPath": "static/news.png",
+        "selectedIconPath": "static/news-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/member/member",
+        "iconPath": "static/member.png",
+        "selectedIconPath": "static/member-active.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,1 @@
+<view><block wx:for="{{$root.l0}}" wx:for-item="x" wx:for-index="index" wx:key="id"><view class="news-item"><image src="{{img[index]}}"></image><view class="right"><view class="tit">{{''+x.$orig.title+''}}</view><view class="info"><text>{{"发表时间："+x.f0}}</text><text>{{"浏览次数："+x.$orig.click}}</text></view></view></view></block></view>
